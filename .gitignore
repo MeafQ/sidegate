@@ -1,0 +1,5 @@
+.DS_Store
+/dist/
+/lab/.state/
+/lab/results/
+node_modules/

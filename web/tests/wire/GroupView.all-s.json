@@ -1,0 +1,41 @@
+{
+  "id": "all-s",
+  "revision": 1,
+  "name": "All s",
+  "members": {
+    "sources": {
+      "not": false,
+      "values": [
+        "s"
+      ]
+    },
+    "countries": {
+      "not": false,
+      "values": []
+    },
+    "protocols": {
+      "not": false,
+      "values": []
+    },
+    "include": "",
+    "exclude": "",
+    "box": null
+  },
+  "ticked": [],
+  "resolved": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "usedBy": [],
+  "moves7d": 0,
+  "firstChoice": "a",
+  "order": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "preferred": null
+}

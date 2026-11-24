@@ -1,0 +1,36 @@
+{
+  "createdAt": "2026-11-04T12:00:00Z",
+  "id": "serving",
+  "version": 1,
+  "name": "Serving",
+  "exit": {
+    "kind": "group",
+    "group": "mine"
+  },
+  "status": "serving",
+  "downReason": null,
+  "server": "a",
+  "appliedServer": "a",
+  "leavingBy": null,
+  "pending": false,
+  "runtime": {
+    "phase": "ready",
+    "applied": {
+      "kind": "up",
+      "server": "a"
+    },
+    "networkId": null,
+    "networkEstablished": true,
+    "errorCode": null
+  },
+  "unifi": {
+    "name": "Serving",
+    "interface": "pxa1",
+    "known": true,
+    "client": "present",
+    "trouble": null
+  },
+  "backups": [
+    "b"
+  ]
+}

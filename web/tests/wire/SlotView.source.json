@@ -1,0 +1,39 @@
+{
+  "createdAt": "2026-11-04T12:00:00Z",
+  "id": "source",
+  "version": 1,
+  "name": "Source",
+  "exit": {
+    "kind": "source",
+    "source": "s"
+  },
+  "status": "checking",
+  "downReason": null,
+  "server": null,
+  "appliedServer": null,
+  "leavingBy": null,
+  "pending": false,
+  "runtime": {
+    "phase": "closed",
+    "applied": {
+      "kind": "down",
+      "reason": "unselected"
+    },
+    "networkId": null,
+    "networkEstablished": false,
+    "errorCode": null
+  },
+  "unifi": {
+    "name": "Source",
+    "interface": "pxa3",
+    "known": true,
+    "client": "present",
+    "trouble": null
+  },
+  "backups": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ]
+}

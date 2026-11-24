@@ -1,0 +1,36 @@
+{
+  "createdAt": "2026-11-04T12:00:00Z",
+  "id": "assigned",
+  "version": 1,
+  "name": "Assigned",
+  "exit": {
+    "kind": "server",
+    "server": "c"
+  },
+  "status": "checking",
+  "downReason": null,
+  "server": null,
+  "appliedServer": null,
+  "leavingBy": null,
+  "pending": false,
+  "runtime": {
+    "phase": "closed",
+    "applied": {
+      "kind": "down",
+      "reason": "unselected"
+    },
+    "networkId": null,
+    "networkEstablished": false,
+    "errorCode": null
+  },
+  "unifi": {
+    "name": "Assigned",
+    "interface": "pxa2",
+    "known": true,
+    "client": "present",
+    "trouble": "nameTaken"
+  },
+  "backups": [
+    "c"
+  ]
+}

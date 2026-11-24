@@ -1,0 +1,11 @@
+#profile-title: base64:SGlkZGlmeSBEZW1v
+#profile-update-interval: 1
+#subscription-userinfo: upload=0; download=1073741824; total=107374182400; expire=1798761600
+
+vless://a1a1a1a1-0000-4000-8000-000000000001@hd.example.net:443?security=tls&sni=hd.example.net&type=ws&host=hd.example.net&path=%2Fhdws&alpn=http%2F1.1&fp=chrome#Hiddify%20WS%20%F0%9F%9A%80
+vless://a1a1a1a1-0000-4000-8000-000000000001@hd.example.net:443?security=reality&sni=www.example.com&type=grpc&serviceName=hdgrpc&pbk=JKfC68h07m-NaOnVzJqoBWenFpzidYSUGv2DaOFWE8Q&sid=13f0a742ae772601&fp=chrome#Hiddify%20Reality%20gRPC
+trojan://hdTrojan@hd.example.net:443?security=tls&sni=hd.example.net&type=ws&host=hd.example.net&path=%2Ftrws&allowInsecure=1#Hiddify%20Trojan%20insecure
+hysteria2://hdHy2Pass@hd.example.net:8443?obfs=salamander&obfs-password=x&sni=hd.example.net#Hiddify%20Hysteria2
+tuic://a1a1a1a1-0000-4000-8000-000000000001:hdTuic@hd.example.net:8444?congestion_control=bbr&alpn=h3&sni=hd.example.net#Hiddify%20TUIC
+ss://YWVzLTI1Ni1nY206aGRTUw@hd.example.net:8388/?plugin=v2ray-plugin%3Bmode%3Dwebsocket#Hiddify%20SS%20plugin
+wireguard://cHJpdmF0ZQ@hd.example.net:51820?publickey=x#Hiddify%20WG

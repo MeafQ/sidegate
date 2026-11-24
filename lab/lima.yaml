@@ -1,0 +1,11 @@
+minimumLimaVersion: 2.0.0
+base:
+- template:_images/ubuntu-20.04
+cpus: 4
+memory: 4GiB
+disk: 12GiB
+mounts: []
+containerd:
+  system: false
+  user: false
+upgradePackages: false

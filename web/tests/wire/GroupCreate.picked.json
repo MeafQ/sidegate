@@ -1,0 +1,24 @@
+{
+  "name": "G",
+  "members": {
+    "sources": {
+      "not": false,
+      "values": []
+    },
+    "countries": {
+      "not": false,
+      "values": []
+    },
+    "protocols": {
+      "not": false,
+      "values": []
+    },
+    "include": "",
+    "exclude": "",
+    "box": "ticked"
+  },
+  "ticked": [
+    "a",
+    "b"
+  ]
+}

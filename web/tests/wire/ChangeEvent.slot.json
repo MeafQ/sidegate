@@ -1,0 +1,9 @@
+{
+  "id": "1",
+  "at": "2026-11-04T12:00:00Z",
+  "revision": 1,
+  "kind": "slot",
+  "slot": "serving",
+  "source": null,
+  "resync": false
+}

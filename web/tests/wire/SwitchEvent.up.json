@@ -1,0 +1,34 @@
+{
+  "id": "e2",
+  "owner": {
+    "kind": "slot",
+    "slot": "serving"
+  },
+  "slots": [
+    "serving"
+  ],
+  "intent": 2,
+  "from": {
+    "kind": "up",
+    "server": "a"
+  },
+  "to": {
+    "kind": "down",
+    "reason": "confirmedDead"
+  },
+  "reason": "failureMove",
+  "evidence": [
+    {
+      "server": "a",
+      "kind": "activeProbe",
+      "verdict": "failed",
+      "target": "t1",
+      "round": 1,
+      "at": "2026-11-04T12:00:00Z",
+      "pingMs": 5,
+      "newConnectionMs": 10
+    }
+  ],
+  "requestedAt": "2026-11-04T12:00:00Z",
+  "appliedAt": "2026-11-04T12:00:00Z"
+}

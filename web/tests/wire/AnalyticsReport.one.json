@@ -1,0 +1,25 @@
+{
+  "buckets": [
+    {
+      "start": "2026-11-04T12:00:00Z",
+      "source": "s",
+      "lineage": "a",
+      "country": "DE",
+      "uploaded": 0,
+      "downloaded": 0,
+      "probeSuccesses": 4,
+      "probeAttempts": 4,
+      "wanExcluded": 0,
+      "unknown": 0,
+      "pingMedianMs": 100,
+      "pingP95Ms": 140,
+      "newConnectionMedianMs": null,
+      "forcedSwitchAways": 0,
+      "servedSeconds": 60,
+      "incidents": 0,
+      "managementTrafficIncluded": true
+    }
+  ],
+  "coveredUntil": "2026-11-04T12:00:00Z",
+  "gapCount": 0
+}

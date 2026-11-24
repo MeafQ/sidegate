@@ -1,0 +1,24 @@
+{
+  "id": "e5",
+  "owner": {
+    "kind": "group",
+    "group": "mine"
+  },
+  "slots": [
+    "serving",
+    "other"
+  ],
+  "intent": 2,
+  "from": {
+    "kind": "up",
+    "server": "b"
+  },
+  "to": {
+    "kind": "up",
+    "server": "a"
+  },
+  "reason": "preferred",
+  "evidence": [],
+  "requestedAt": "2026-11-04T12:00:00Z",
+  "appliedAt": "2026-11-04T12:00:00Z"
+}

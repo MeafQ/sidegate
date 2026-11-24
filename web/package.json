@@ -1,0 +1,53 @@
+{
+  "name": "sidegate-web",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node tests/e2e/.preview.mjs",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint --deny-warnings",
+    "preview": "vite preview",
+    "typecheck": "tsc -b",
+    "test": "node --test \"src/**/*.test.ts\"",
+    "test:e2e": "node --test --test-concurrency=1 tests/e2e/e2e.test.mjs tests/e2e/save.test.mjs tests/e2e/retry.test.mjs tests/e2e/page.test.mjs tests/e2e/store.test.mjs",
+    "test:real": "E2E_DAEMON=real node --test --test-concurrency=1 tests/e2e/e2e.test.mjs tests/e2e/save.test.mjs tests/e2e/retry.test.mjs",
+    "test:contract": "node --test tests/e2e/contract.test.mjs",
+    "test:fuzz": "node tests/e2e/fuzz.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "^5.3.0",
+    "@tanstack/react-query": "^5.105.3",
+    "circle-flags": "2.8.3",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "cmdk": "^1.1.1",
+    "lucide-react": "^1.67.0",
+    "next-themes": "^0.4.6",
+    "radix-ui": "^1.8.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router": "^8.5.1",
+    "recharts": "^3.8.0",
+    "shadcn": "^4.23.0",
+    "sonner": "^2.0.8",
+    "tailwind-merge": "^3.7.0",
+    "tw-animate-css": "^1.4.0",
+    "zod": "^4.6.7"
+  },
+  "overrides": {
+    "@babel/plugin-transform-runtime": "^7.29.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.4",
+    "@types/node": "^24.19.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.2.1",
+    "oxlint": "^1.91.0",
+    "playwright-core": "^1.64.1",
+    "tailwindcss": "^4.3.4",
+    "typescript": "~6.0.2",
+    "vite": "^8.3.5"
+  }
+}

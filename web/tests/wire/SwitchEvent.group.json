@@ -1,0 +1,24 @@
+{
+  "id": "e3",
+  "owner": {
+    "kind": "group",
+    "group": "mine"
+  },
+  "slots": [
+    "serving",
+    "other"
+  ],
+  "intent": 2,
+  "from": {
+    "kind": "up",
+    "server": "a"
+  },
+  "to": {
+    "kind": "up",
+    "server": "b"
+  },
+  "reason": "improvementMove",
+  "evidence": [],
+  "requestedAt": "2026-11-04T12:00:00Z",
+  "appliedAt": "2026-11-04T12:00:00Z"
+}

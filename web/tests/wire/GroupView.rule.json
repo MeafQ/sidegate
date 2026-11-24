@@ -1,0 +1,37 @@
+{
+  "id": "rule",
+  "revision": 1,
+  "name": "Rule",
+  "members": {
+    "sources": {
+      "not": false,
+      "values": [
+        "s"
+      ]
+    },
+    "countries": {
+      "not": false,
+      "values": [
+        "DE"
+      ]
+    },
+    "protocols": {
+      "not": false,
+      "values": []
+    },
+    "include": "a",
+    "exclude": "z",
+    "box": null
+  },
+  "ticked": [],
+  "resolved": [
+    "a"
+  ],
+  "usedBy": [],
+  "moves7d": 0,
+  "firstChoice": "a",
+  "order": [
+    "a"
+  ],
+  "preferred": null
+}

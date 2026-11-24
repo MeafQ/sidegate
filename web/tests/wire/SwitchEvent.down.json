@@ -1,0 +1,23 @@
+{
+  "id": "e1",
+  "owner": {
+    "kind": "slot",
+    "slot": "serving"
+  },
+  "slots": [
+    "serving"
+  ],
+  "intent": 1,
+  "from": {
+    "kind": "down",
+    "reason": "unselected"
+  },
+  "to": {
+    "kind": "up",
+    "server": "a"
+  },
+  "reason": "initialSelection",
+  "evidence": [],
+  "requestedAt": "2026-11-04T12:00:00Z",
+  "appliedAt": null
+}

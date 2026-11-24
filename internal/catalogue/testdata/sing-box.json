@@ -1,0 +1,39 @@
+{
+  "log": {"level": "warn"},
+  "dns": {"servers": [{"tag": "cf", "address": "https://1.1.1.1/dns-query"}]},
+  "inbounds": [{"type": "tun", "tag": "tun-in", "address": ["172.19.0.1/30"], "auto_route": true}],
+  "outbounds": [
+    {"type": "selector", "tag": "select", "outbounds": ["auto", "🇩🇪 DE Reality"]},
+    {"type": "urltest", "tag": "auto", "outbounds": ["🇩🇪 DE Reality", "🇳🇱 NL VMess"]},
+    {
+      "type": "vless", "tag": "🇩🇪 DE Reality", "server": "de.sb.example.net", "server_port": 443,
+      "uuid": "d4d4d4d4-0000-4000-8000-000000000001", "flow": "xtls-rprx-vision", "packet_encoding": "xudp",
+      "tls": {"enabled": true, "server_name": "www.example.com", "utls": {"enabled": true, "fingerprint": "chrome"},
+              "reality": {"enabled": true, "public_key": "ZCAAoWFiT2tR5b2hBh7RIuy6krPvCIrBp3kN4znYKOU", "short_id": "63ecb9e95ef79ad3"}}
+    },
+    {
+      "type": "vmess", "tag": "🇳🇱 NL VMess", "server": "nl.sb.example.net", "server_port": 443,
+      "uuid": "d4d4d4d4-0000-4000-8000-000000000002", "security": "auto", "alter_id": 0,
+      "tls": {"enabled": true, "server_name": "nl.sb.example.net"},
+      "transport": {"type": "ws", "path": "/vm", "headers": {"Host": "nl.sb.example.net"}},
+      "multiplex": {"enabled": true, "protocol": "h2mux"}
+    },
+    {
+      "type": "trojan", "tag": "🇫🇮 FI Trojan", "server": "fi.sb.example.net", "server_port": 443, "password": "sbTrojan",
+      "tls": {"enabled": true, "server_name": "fi.sb.example.net", "alpn": ["h2"]},
+      "transport": {"type": "grpc", "service_name": "trgrpc"}
+    },
+    {"type": "shadowsocks", "tag": "SS", "server": "ss.sb.example.net", "server_port": 8388, "method": "chacha20-ietf-poly1305", "password": "sbSS"},
+    {"type": "hysteria2", "tag": "Hy2", "server": "hy.sb.example.net", "server_port": 443, "password": "sbHy2", "tls": {"enabled": true}},
+    {"type": "tuic", "tag": "TUIC", "server": "tuic.sb.example.net", "server_port": 443, "uuid": "d4d4d4d4-0000-4000-8000-000000000003", "password": "sbTuic"},
+    {"type": "vless", "tag": "HTTPUpgrade", "server": "hu.sb.example.net", "server_port": 443, "uuid": "d4d4d4d4-0000-4000-8000-000000000005",
+     "tls": {"enabled": true, "server_name": "hu.sb.example.net"}, "transport": {"type": "httpupgrade", "path": "/hu"}},
+    {"type": "socks", "tag": "relay", "server": "relay.sb.example.net", "server_port": 1080, "version": "5", "username": "u", "password": "p"},
+    {"type": "vless", "tag": "🇺🇸 US chained", "server": "us.sb.example.net", "server_port": 443, "uuid": "d4d4d4d4-0000-4000-8000-000000000004",
+     "tls": {"enabled": true, "server_name": "us.sb.example.net"}, "detour": "relay"},
+    {"type": "direct", "tag": "direct"},
+    {"type": "block", "tag": "block"},
+    {"type": "dns", "tag": "dns-out"}
+  ],
+  "route": {"rules": [{"protocol": "dns", "outbound": "dns-out"}], "final": "select"}
+}

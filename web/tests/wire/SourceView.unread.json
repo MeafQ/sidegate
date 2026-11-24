@@ -1,0 +1,20 @@
+{
+  "id": "new",
+  "revision": 1,
+  "name": "New",
+  "nameSet": true,
+  "firstChoice": null,
+  "order": [],
+  "preferred": null,
+  "moves7d": 0,
+  "origin": {
+    "kind": "manual"
+  },
+  "feed": null,
+  "stored": 0,
+  "missing": 0,
+  "usedBy": [],
+  "removes": [],
+  "diagnostics": [],
+  "addedAt": null
+}

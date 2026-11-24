@@ -1,0 +1,92 @@
+[
+  {
+    "remarks": "🇩🇪 Frankfurt",
+    "dns": {"servers": ["1.1.1.1"]},
+    "inbounds": [{"tag": "socks", "port": 10808, "listen": "127.0.0.1", "protocol": "socks", "settings": {"udp": true}}],
+    "outbounds": [
+      {
+        "tag": "proxy",
+        "protocol": "vless",
+        "settings": {"vnext": [{"address": "fra.rw.example.net", "port": 443, "users": [{"id": "b2b2b2b2-0000-4000-8000-000000000001", "encryption": "none", "flow": "xtls-rprx-vision"}]}]},
+        "streamSettings": {
+          "network": "raw",
+          "security": "reality",
+          "realitySettings": {"serverName": "www.example.com", "fingerprint": "chrome", "publicKey": "3HSS_wKB0gCG2MEttkX39PqDuF26Lrd84iolYEqn2LU", "shortId": "63ecb9e95ef79ad3", "spiderX": "/"}
+        },
+        "mux": {"enabled": false, "concurrency": -1}
+      },
+      {"tag": "direct", "protocol": "freedom"},
+      {"tag": "block", "protocol": "blackhole"}
+    ],
+    "routing": {"domainStrategy": "IPIfNonMatch", "rules": [{"type": "field", "outboundTag": "direct", "ip": ["geoip:private"]}]}
+  },
+  {
+    "remarks": "🇳🇱 Amsterdam via Frankfurt",
+    "outbounds": [
+      {
+        "tag": "proxy",
+        "protocol": "vless",
+        "settings": {"address": "ams.rw.example.net", "port": 8443, "id": "b2b2b2b2-0000-4000-8000-000000000001", "encryption": "none"},
+        "streamSettings": {
+          "network": "xhttp",
+          "security": "tls",
+          "xhttpSettings": {"path": "/xh", "host": "ams.rw.example.net", "mode": "packet-up"},
+          "tlsSettings": {"serverName": "ams.rw.example.net", "fingerprint": "chrome", "alpn": ["h2"]},
+          "sockopt": {"dialerProxy": "relay"}
+        }
+      },
+      {
+        "tag": "relay",
+        "protocol": "trojan",
+        "settings": {"servers": [{"address": "relay.rw.example.net", "port": 443, "password": "rwRelayPass"}]},
+        "streamSettings": {"network": "ws", "security": "tls", "wsSettings": {"path": "/relay", "host": "relay.rw.example.net"}, "tlsSettings": {"serverName": "relay.rw.example.net"}}
+      },
+      {"tag": "direct", "protocol": "freedom"}
+    ]
+  },
+  {
+    "remarks": "🇫🇮 Helsinki pinned",
+    "outbounds": [
+      {
+        "tag": "proxy",
+        "protocol": "vmess",
+        "settings": {"vnext": [{"address": "hel.rw.example.net", "port": 443, "users": [{"id": "b2b2b2b2-0000-4000-8000-000000000002", "security": "auto", "alterId": 0}]}]},
+        "streamSettings": {
+          "network": "grpc",
+          "security": "tls",
+          "grpcSettings": {"serviceName": "vmgrpc"},
+          "tlsSettings": {"serverName": "hel.rw.example.net", "allowInsecure": true, "pinnedPeerCertSha256": "391df8c92c99edba0cc2d8a90c533a9e3ef69e7cbe6e6a6adaf1fcfc92ed5d7d"}
+        }
+      }
+    ]
+  },
+  {
+    "remarks": "🇵🇱 Warsaw insecure",
+    "outbounds": [
+      {
+        "tag": "proxy",
+        "protocol": "trojan",
+        "settings": {"servers": [{"address": "waw.rw.example.net", "port": 443, "password": "rwWarsaw"}]},
+        "streamSettings": {"network": "tcp", "security": "tls", "tlsSettings": {"serverName": "waw.rw.example.net", "allowInsecure": true}}
+      }
+    ]
+  },
+  {
+    "remarks": "🇹🇷 Istanbul fragment",
+    "outbounds": [
+      {
+        "tag": "proxy",
+        "protocol": "vless",
+        "settings": {"vnext": [{"address": "ist.rw.example.net", "port": 443, "users": [{"id": "b2b2b2b2-0000-4000-8000-000000000003", "encryption": "none"}]}]},
+        "streamSettings": {"network": "ws", "security": "tls", "wsSettings": {"path": "/ist"}, "tlsSettings": {"serverName": "ist.rw.example.net"}, "sockopt": {"dialerProxy": "fragment"}}
+      },
+      {"tag": "fragment", "protocol": "freedom", "settings": {"fragment": {"packets": "tlshello", "length": "100-200", "interval": "10-20"}}}
+    ]
+  },
+  {
+    "remarks": "🇸🇪 Stockholm hysteria",
+    "outbounds": [
+      {"tag": "proxy", "protocol": "hysteria", "settings": {"version": 2, "address": "sto.rw.example.net", "port": 443}}
+    ]
+  }
+]

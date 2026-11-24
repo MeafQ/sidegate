@@ -1,0 +1,43 @@
+{
+  "id": "mine",
+  "revision": 1,
+  "name": "Mine",
+  "members": {
+    "sources": {
+      "not": false,
+      "values": []
+    },
+    "countries": {
+      "not": false,
+      "values": []
+    },
+    "protocols": {
+      "not": false,
+      "values": []
+    },
+    "include": "",
+    "exclude": "",
+    "box": "ticked"
+  },
+  "ticked": [
+    "a",
+    "b"
+  ],
+  "resolved": [
+    "a",
+    "b"
+  ],
+  "usedBy": [
+    "serving"
+  ],
+  "moves7d": 2,
+  "firstChoice": "a",
+  "order": [
+    "a",
+    "b"
+  ],
+  "preferred": {
+    "server": "a",
+    "endsAt": "2026-11-05T09:00:00Z"
+  }
+}

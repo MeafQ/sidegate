@@ -1,0 +1,6 @@
+{
+  "user": "owner",
+  "csrf": "token",
+  "version": "v0.1.0",
+  "release": "0123456789ab"
+}

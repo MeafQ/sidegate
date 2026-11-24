@@ -1,0 +1,12 @@
+{
+  "known": true,
+  "limit": 8,
+  "foreign": [
+    {
+      "id": "n",
+      "name": "Theirs",
+      "enabled": true,
+      "trouble": null
+    }
+  ]
+}

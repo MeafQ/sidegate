@@ -1,0 +1,29 @@
+{
+  "id": "s",
+  "revision": 1,
+  "name": "Manual",
+  "nameSet": true,
+  "firstChoice": null,
+  "order": [],
+  "preferred": null,
+  "moves7d": 0,
+  "origin": {
+    "kind": "manual"
+  },
+  "feed": null,
+  "stored": 4,
+  "missing": 0,
+  "usedBy": [
+    "assigned",
+    "dead",
+    "serving",
+    "source"
+  ],
+  "removes": [
+    "all-s",
+    "mine",
+    "rule"
+  ],
+  "diagnostics": [],
+  "addedAt": null
+}

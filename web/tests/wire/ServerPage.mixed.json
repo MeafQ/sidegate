@@ -1,0 +1,186 @@
+{
+  "items": [
+    {
+      "id": "a",
+      "source": "s",
+      "label": "Sweden · proxy",
+      "name": {
+        "remarks": "Sweden",
+        "tag": "proxy"
+      },
+      "home": "k1",
+      "number": null,
+      "country": {
+        "code": "SE",
+        "source": "configFlag"
+      },
+      "presence": "present",
+      "supported": true,
+      "udp": "unknown",
+      "seen": [
+        {
+          "config": "a",
+          "configKey": "a",
+          "tag": "a",
+          "position": 1
+        }
+      ],
+      "protocol": "vless",
+      "transport": "tcp",
+      "missingSince": null,
+      "health": {
+        "verdict": "succeeded",
+        "checkedAt": "2026-11-04T12:00:00Z",
+        "pingAt": "2026-11-04T12:00:00Z",
+        "current": true,
+        "pingP50Ms": 80,
+        "pingP95Ms": 90,
+        "newConnectionP50Ms": 210,
+        "newConnectionP95Ms": 210,
+        "score": 176.02278318872916,
+        "factor": 2.2002847898591145,
+        "incidents7d": 1,
+        "seenDays": 0.03970257633883138,
+        "seenWorking7dMs": 3600000,
+        "lastFailureAt": "2026-11-04T11:30:00Z",
+        "firstSeenAt": "2026-11-01T12:00:00Z"
+      }
+    },
+    {
+      "id": "a",
+      "source": "s",
+      "label": "EDGE-Sweden",
+      "name": {
+        "remarks": null,
+        "tag": "EDGE-Sweden"
+      },
+      "home": null,
+      "number": null,
+      "country": {
+        "code": null,
+        "source": "unknown"
+      },
+      "presence": "missing",
+      "supported": true,
+      "udp": "unknown",
+      "seen": [
+        {
+          "config": "a",
+          "configKey": "a",
+          "tag": "a",
+          "position": 1
+        }
+      ],
+      "protocol": "vless",
+      "transport": "tcp",
+      "missingSince": "2026-11-04T12:00:00Z",
+      "health": {
+        "verdict": "unknown",
+        "checkedAt": null,
+        "pingAt": null,
+        "current": false,
+        "pingP50Ms": null,
+        "pingP95Ms": null,
+        "newConnectionP50Ms": null,
+        "newConnectionP95Ms": null,
+        "score": null,
+        "factor": 1.25,
+        "incidents7d": 0,
+        "seenDays": 0,
+        "seenWorking7dMs": null,
+        "lastFailureAt": null,
+        "firstSeenAt": null
+      }
+    },
+    {
+      "id": "a",
+      "source": "s",
+      "label": "EDGE-Sweden",
+      "name": {
+        "remarks": null,
+        "tag": "EDGE-Sweden"
+      },
+      "home": null,
+      "number": null,
+      "country": {
+        "code": "SE",
+        "source": "tagFlag"
+      },
+      "presence": "present",
+      "supported": true,
+      "udp": "unknown",
+      "seen": [
+        {
+          "config": "a",
+          "configKey": "a",
+          "tag": "a",
+          "position": 1
+        }
+      ],
+      "protocol": "vless",
+      "transport": "tcp",
+      "missingSince": null,
+      "health": {
+        "verdict": "unknown",
+        "checkedAt": null,
+        "pingAt": null,
+        "current": false,
+        "pingP50Ms": null,
+        "pingP95Ms": null,
+        "newConnectionP50Ms": null,
+        "newConnectionP95Ms": null,
+        "score": null,
+        "factor": 1.25,
+        "incidents7d": 0,
+        "seenDays": 0,
+        "seenWorking7dMs": null,
+        "lastFailureAt": null,
+        "firstSeenAt": null
+      }
+    },
+    {
+      "id": "a",
+      "source": "s",
+      "label": "Server 2",
+      "name": null,
+      "home": null,
+      "number": 2,
+      "country": {
+        "code": "NL",
+        "source": "rule"
+      },
+      "presence": "tombstone",
+      "supported": true,
+      "udp": "unknown",
+      "seen": [
+        {
+          "config": "a",
+          "configKey": "a",
+          "tag": "a",
+          "position": 1
+        }
+      ],
+      "protocol": "vless",
+      "transport": "tcp",
+      "missingSince": null,
+      "health": {
+        "verdict": "failed",
+        "checkedAt": "2026-11-04T11:00:00Z",
+        "pingAt": null,
+        "current": false,
+        "pingP50Ms": null,
+        "pingP95Ms": null,
+        "newConnectionP50Ms": null,
+        "newConnectionP95Ms": null,
+        "score": null,
+        "factor": 1.25,
+        "incidents7d": 0,
+        "seenDays": 0,
+        "seenWorking7dMs": null,
+        "lastFailureAt": null,
+        "firstSeenAt": null
+      }
+    }
+  ],
+  "next": "a"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "e4",
+  "owner": {
+    "kind": "source",
+    "source": "s"
+  },
+  "slots": [
+    "source"
+  ],
+  "intent": 1,
+  "from": {
+    "kind": "direct"
+  },
+  "to": {
+    "kind": "up",
+    "server": "a"
+  },
+  "reason": "exitChanged",
+  "evidence": [],
+  "requestedAt": "2026-11-04T12:00:00Z",
+  "appliedAt": null
+}

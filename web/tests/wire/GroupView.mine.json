@@ -1,0 +1,40 @@
+{
+  "id": "mine",
+  "revision": 1,
+  "name": "Mine",
+  "members": {
+    "sources": {
+      "not": false,
+      "values": []
+    },
+    "countries": {
+      "not": false,
+      "values": []
+    },
+    "protocols": {
+      "not": false,
+      "values": []
+    },
+    "include": "",
+    "exclude": "",
+    "box": "ticked"
+  },
+  "ticked": [
+    "a",
+    "b"
+  ],
+  "resolved": [
+    "a",
+    "b"
+  ],
+  "usedBy": [
+    "serving"
+  ],
+  "moves7d": 0,
+  "firstChoice": "a",
+  "order": [
+    "a",
+    "b"
+  ],
+  "preferred": null
+}

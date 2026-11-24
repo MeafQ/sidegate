@@ -1,0 +1,48 @@
+{
+  "items": [
+    {
+      "id": "a",
+      "source": "s",
+      "label": "Server",
+      "name": null,
+      "home": "k1",
+      "number": null,
+      "country": {
+        "code": "SE",
+        "source": "tagFlag"
+      },
+      "presence": "present",
+      "supported": true,
+      "udp": "unknown",
+      "seen": [
+        {
+          "config": "🇸🇪",
+          "configKey": "k1",
+          "tag": "🇸🇪",
+          "position": 1
+        }
+      ],
+      "protocol": "vless",
+      "transport": "tcp",
+      "missingSince": null,
+      "health": {
+        "verdict": "unknown",
+        "checkedAt": null,
+        "pingAt": null,
+        "current": false,
+        "pingP50Ms": null,
+        "pingP95Ms": null,
+        "newConnectionP50Ms": null,
+        "newConnectionP95Ms": null,
+        "score": null,
+        "factor": 1.25,
+        "incidents7d": 0,
+        "seenDays": 0,
+        "seenWorking7dMs": null,
+        "lastFailureAt": null,
+        "firstSeenAt": null
+      }
+    }
+  ],
+  "next": ""
+}

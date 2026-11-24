@@ -1,0 +1,19 @@
+{
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "Review NL",
+      "server": "nl.example.net",
+      "server_port": 443,
+      "uuid": "11111111-1111-4111-8111-111111111111",
+      "tls": { "enabled": true, "server_name": "nl.example.net" }
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": ["Review NL"],
+      "url":
+        "https://www.gstatic.com/generate_204"
+    }
+  ]
+}

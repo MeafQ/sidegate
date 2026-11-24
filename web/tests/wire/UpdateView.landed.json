@@ -1,0 +1,19 @@
+{
+  "version": "v0.2.0",
+  "releases": true,
+  "guide": "https://example.test/OWNER/sidegate/blob/v0.1.0/docs/operate.md",
+  "check": {
+    "at": "2026-11-04T12:00:00Z",
+    "failure": null
+  },
+  "offered": null,
+  "running": null,
+  "last": {
+    "attempt": "0123456789abcdef",
+    "version": "v0.2.0",
+    "at": "2026-11-04T12:00:00Z",
+    "outcome": "landed",
+    "reason": null,
+    "message": null
+  }
+}

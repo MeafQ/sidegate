@@ -1,0 +1,33 @@
+{
+  "createdAt": "2026-11-04T12:00:00Z",
+  "id": "block",
+  "version": 1,
+  "name": "Block",
+  "exit": {
+    "kind": "block"
+  },
+  "status": "block",
+  "downReason": null,
+  "server": null,
+  "appliedServer": null,
+  "leavingBy": null,
+  "pending": false,
+  "runtime": {
+    "phase": "closed",
+    "applied": {
+      "kind": "down",
+      "reason": "unselected"
+    },
+    "networkId": "n-gone",
+    "networkEstablished": false,
+    "errorCode": null
+  },
+  "unifi": {
+    "name": "Block",
+    "interface": "pxa5",
+    "known": true,
+    "client": "deleted",
+    "trouble": null
+  },
+  "backups": []
+}

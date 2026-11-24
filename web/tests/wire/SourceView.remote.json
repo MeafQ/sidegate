@@ -1,0 +1,95 @@
+{
+  "id": "remote",
+  "revision": 2,
+  "name": "Remote",
+  "nameSet": true,
+  "firstChoice": "a",
+  "order": [
+    "a",
+    "b"
+  ],
+  "preferred": {
+    "server": "a",
+    "endsAt": "2026-11-05T09:00:00Z"
+  },
+  "moves7d": 2,
+  "origin": {
+    "kind": "remote",
+    "userAgent": "Happ/3.0.0",
+    "refreshEverySeconds": 3600,
+    "paused": false,
+    "provider": {
+      "title": "",
+      "announcement": "",
+      "supportUrl": "",
+      "profileUrl": "",
+      "suggestedRefreshSeconds": null,
+      "quota": {
+        "upload": null,
+        "download": null,
+        "limit": null,
+        "expires": null,
+        "refills": null,
+        "observedAt": null
+      }
+    },
+    "fetch": {
+      "checkedAt": "2026-11-04T12:00:00Z",
+      "updatedAt": "2026-11-04T12:00:00Z",
+      "failures": 2,
+      "failureCode": "http_503"
+    },
+    "dueAt": "2026-11-04T13:00:00Z"
+  },
+  "feed": {
+    "configs": [
+      {
+        "key": "a",
+        "place": 1,
+        "name": "Sweden",
+        "servers": 2,
+        "skipped": [
+          {
+            "reason": "hop",
+            "index": 2,
+            "tag": "relay"
+          },
+          {
+            "reason": "helper",
+            "index": 4,
+            "tag": "DIRECT",
+            "protocol": "freedom"
+          }
+        ]
+      },
+      {
+        "key": null,
+        "place": 3,
+        "name": "Warsaw",
+        "servers": 0,
+        "skipped": [
+          {
+            "reason": "refused",
+            "index": 1,
+            "tag": "proxy",
+            "position": 1,
+            "code": "insecure_tls",
+            "field": "allowInsecure"
+          }
+        ]
+      }
+    ]
+  },
+  "stored": 0,
+  "missing": 0,
+  "usedBy": [],
+  "removes": [],
+  "diagnostics": [
+    {
+      "entry": 4,
+      "code": "unsupported_protocol",
+      "field": "field"
+    }
+  ],
+  "addedAt": "2026-11-01T12:00:00Z"
+}

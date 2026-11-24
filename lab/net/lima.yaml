@@ -1,0 +1,36 @@
+minimumLimaVersion: 2.0.0
+base:
+- template:_images/ubuntu-24.04
+cpus: 4
+memory: 4GiB
+disk: 16GiB
+mounts: []
+containerd:
+  system: false
+  user: false
+upgradePackages: false
+# The Mac's resolver can be a gateway on its LAN, so the VM must not inherit it.
+hostResolver:
+  enabled: false
+dns:
+- 1.1.1.1
+- 9.9.9.9
+portForwards:
+- guestPort: 8443
+  hostIP: 127.0.0.1
+  hostPort: 18443
+- guestPortRange: [1, 65535]
+  ignore: true
+param:
+  # up.sh sets it from LAB_BLOCK_SUBNET.
+  blockSubnet: ""
+provision:
+- mode: system
+  script: |
+    #!/bin/sh
+    if [ -n "$PARAM_blockSubnet" ]; then
+      for chain in OUTPUT FORWARD; do
+        iptables -C "$chain" -d "$PARAM_blockSubnet" -j REJECT 2>/dev/null || iptables -I "$chain" -d "$PARAM_blockSubnet" -j REJECT
+      done
+    fi
+    resolvectl dns eth0 1.1.1.1 9.9.9.9 || true

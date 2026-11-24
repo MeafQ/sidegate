@@ -1,0 +1,2934 @@
+[
+ {
+  "remarks": "Germany 🇩🇪",
+  "log": {
+   "loglevel": "warning"
+  },
+  "api": {
+   "tag": "api"
+  },
+  "dns": {
+   "servers": [
+    "1.1.1.1"
+   ]
+  },
+  "inbounds": [
+   {
+    "tag": "socks-in",
+    "port": 10808,
+    "protocol": "socks"
+   }
+  ],
+  "outbounds": [
+   {
+    "tag": "proxy",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node1.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000001",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni1.example.com",
+      "publicKey": "fake-reality-key-1",
+      "shortId": "01",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "EDGE-STANDBY",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node2.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000002",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni1.example.com",
+      "publicKey": "fake-reality-key-1",
+      "shortId": "01",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "EDGE-Germany 🇩🇪",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node2.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000002",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni1.example.com",
+      "publicKey": "fake-reality-key-1",
+      "shortId": "01",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "EDGE-Netherlands 🇳🇱",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node3.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000003",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "xhttp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni2.example.com",
+      "publicKey": "fake-reality-key-2",
+      "shortId": "02",
+      "fingerprint": "chrome"
+     },
+     "xhttpSettings": {
+      "path": "/fake2",
+      "mode": "auto"
+     }
+    }
+   },
+   {
+    "tag": "Netherlands 🇳🇱",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node4.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000004",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "xhttp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni2.example.com",
+      "publicKey": "fake-reality-key-2",
+      "shortId": "02",
+      "fingerprint": "chrome"
+     },
+     "xhttpSettings": {
+      "path": "/fake2",
+      "mode": "auto"
+     }
+    }
+   },
+   {
+    "tag": "EDGE-Sweden 🇸🇪",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node5.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000005",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni3.example.com",
+      "publicKey": "fake-reality-key-3",
+      "shortId": "03",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "Sweden 🇸🇪",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node6.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000006",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni3.example.com",
+      "publicKey": "fake-reality-key-3",
+      "shortId": "03",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "EDGE-Bulgaria 🇧🇬",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node7.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000007",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni4.example.com",
+      "publicKey": "fake-reality-key-4",
+      "shortId": "04",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "Bulgaria 🇧🇬",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node8.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000008",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni4.example.com",
+      "publicKey": "fake-reality-key-4",
+      "shortId": "04",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "EDGE-USA 🇺🇸",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node9.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000009",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni5.example.com",
+      "publicKey": "fake-reality-key-5",
+      "shortId": "05",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "USA 🇺🇸",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node10.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000010",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni5.example.com",
+      "publicKey": "fake-reality-key-5",
+      "shortId": "05",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "EDGE-Romania 🇷🇴",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node11.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000011",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni6.example.com",
+      "publicKey": "fake-reality-key-6",
+      "shortId": "06",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "Romania 🇷🇴",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node12.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000012",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni6.example.com",
+      "publicKey": "fake-reality-key-6",
+      "shortId": "06",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "DIRECT",
+    "protocol": "freedom"
+   },
+   {
+    "tag": "BLOCK",
+    "protocol": "blackhole"
+   },
+   {
+    "tag": "REJECT",
+    "protocol": "blackhole"
+   },
+   {
+    "tag": "LOOPBACK",
+    "protocol": "loopback"
+   },
+   {
+    "tag": "DNS",
+    "protocol": "dns"
+   }
+  ],
+  "routing": {
+   "domainStrategy": "IPIfNonMatch",
+   "balancers": [
+    {
+     "tag": "FIRST",
+     "selector": [
+      "proxy"
+     ],
+     "fallbackTag": "LOOPBACK"
+    },
+    {
+     "tag": "YOUTUBE",
+     "selector": [
+      "Albania"
+     ],
+     "strategy": {
+      "type": "leastPing"
+     },
+     "fallbackTag": "LOOPBACK"
+    },
+    {
+     "tag": "HEAVYTRAFFIC",
+     "selector": [
+      "EDGE-Romania",
+      "EDGE-Bulgaria"
+     ],
+     "strategy": {
+      "type": "leastPing"
+     },
+     "fallbackTag": "LOOPBACK"
+    },
+    {
+     "tag": "AUTO",
+     "selector": [
+      "Bulgaria",
+      "Netherlands",
+      "Germany",
+      "Sweden"
+     ],
+     "strategy": {
+      "type": "leastPing"
+     }
+    }
+   ],
+   "rules": [
+    {
+     "inboundTag": [
+      "socks-in"
+     ],
+     "balancerTag": "AUTO"
+    }
+   ]
+  },
+  "burstObservatory": {
+   "pingConfig": {
+    "timeout": "5s",
+    "interval": "1m",
+    "sampling": 4,
+    "httpMethod": "GET",
+    "destination": "https://www.gstatic.com/generate_204",
+    "connectivity": "https://www.gstatic.com/generate_204"
+   },
+   "subjectSelector": [
+    "proxy",
+    "Bulgaria",
+    "Netherlands",
+    "Germany",
+    "Sweden",
+    "Albania",
+    "EDGE-Romania",
+    "EDGE-Bulgaria"
+   ]
+  }
+ },
+ {
+  "remarks": "Netherlands 🇳🇱",
+  "log": {
+   "loglevel": "warning"
+  },
+  "api": {
+   "tag": "api"
+  },
+  "dns": {
+   "servers": [
+    "1.1.1.1"
+   ]
+  },
+  "inbounds": [
+   {
+    "tag": "socks-in",
+    "port": 10808,
+    "protocol": "socks"
+   }
+  ],
+  "outbounds": [
+   {
+    "tag": "proxy",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node4.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000004",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "xhttp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni2.example.com",
+      "publicKey": "fake-reality-key-2",
+      "shortId": "02",
+      "fingerprint": "chrome"
+     },
+     "xhttpSettings": {
+      "path": "/fake2",
+      "mode": "auto"
+     }
+    }
+   },
+   {
+    "tag": "EDGE-STANDBY",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node3.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000003",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "xhttp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni2.example.com",
+      "publicKey": "fake-reality-key-2",
+      "shortId": "02",
+      "fingerprint": "chrome"
+     },
+     "xhttpSettings": {
+      "path": "/fake2",
+      "mode": "auto"
+     }
+    }
+   },
+   {
+    "tag": "EDGE-Germany 🇩🇪",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node2.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000002",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni1.example.com",
+      "publicKey": "fake-reality-key-1",
+      "shortId": "01",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "Germany 🇩🇪",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node1.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000001",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni1.example.com",
+      "publicKey": "fake-reality-key-1",
+      "shortId": "01",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "EDGE-Netherlands 🇳🇱",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node3.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000003",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "xhttp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni2.example.com",
+      "publicKey": "fake-reality-key-2",
+      "shortId": "02",
+      "fingerprint": "chrome"
+     },
+     "xhttpSettings": {
+      "path": "/fake2",
+      "mode": "auto"
+     }
+    }
+   },
+   {
+    "tag": "EDGE-Sweden 🇸🇪",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node5.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000005",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni3.example.com",
+      "publicKey": "fake-reality-key-3",
+      "shortId": "03",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "Sweden 🇸🇪",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node6.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000006",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni3.example.com",
+      "publicKey": "fake-reality-key-3",
+      "shortId": "03",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "EDGE-Bulgaria 🇧🇬",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node7.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000007",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni4.example.com",
+      "publicKey": "fake-reality-key-4",
+      "shortId": "04",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "Bulgaria 🇧🇬",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node8.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000008",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni4.example.com",
+      "publicKey": "fake-reality-key-4",
+      "shortId": "04",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "EDGE-USA 🇺🇸",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node9.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000009",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni5.example.com",
+      "publicKey": "fake-reality-key-5",
+      "shortId": "05",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "USA 🇺🇸",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node10.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000010",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni5.example.com",
+      "publicKey": "fake-reality-key-5",
+      "shortId": "05",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "EDGE-Romania 🇷🇴",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node11.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000011",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni6.example.com",
+      "publicKey": "fake-reality-key-6",
+      "shortId": "06",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "Romania 🇷🇴",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node12.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000012",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni6.example.com",
+      "publicKey": "fake-reality-key-6",
+      "shortId": "06",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "DIRECT",
+    "protocol": "freedom"
+   },
+   {
+    "tag": "BLOCK",
+    "protocol": "blackhole"
+   },
+   {
+    "tag": "REJECT",
+    "protocol": "blackhole"
+   },
+   {
+    "tag": "LOOPBACK",
+    "protocol": "loopback"
+   },
+   {
+    "tag": "DNS",
+    "protocol": "dns"
+   }
+  ],
+  "routing": {
+   "domainStrategy": "IPIfNonMatch",
+   "balancers": [
+    {
+     "tag": "FIRST",
+     "selector": [
+      "proxy"
+     ],
+     "fallbackTag": "LOOPBACK"
+    },
+    {
+     "tag": "YOUTUBE",
+     "selector": [
+      "Albania"
+     ],
+     "strategy": {
+      "type": "leastPing"
+     },
+     "fallbackTag": "LOOPBACK"
+    },
+    {
+     "tag": "HEAVYTRAFFIC",
+     "selector": [
+      "EDGE-Romania",
+      "EDGE-Bulgaria"
+     ],
+     "strategy": {
+      "type": "leastPing"
+     },
+     "fallbackTag": "LOOPBACK"
+    },
+    {
+     "tag": "AUTO",
+     "selector": [
+      "Bulgaria",
+      "Netherlands",
+      "Germany",
+      "Sweden"
+     ],
+     "strategy": {
+      "type": "leastPing"
+     }
+    }
+   ],
+   "rules": [
+    {
+     "inboundTag": [
+      "socks-in"
+     ],
+     "balancerTag": "AUTO"
+    }
+   ]
+  },
+  "burstObservatory": {
+   "pingConfig": {
+    "timeout": "5s",
+    "interval": "1m",
+    "sampling": 4,
+    "httpMethod": "GET",
+    "destination": "https://www.gstatic.com/generate_204",
+    "connectivity": "https://www.gstatic.com/generate_204"
+   },
+   "subjectSelector": [
+    "proxy",
+    "Bulgaria",
+    "Netherlands",
+    "Germany",
+    "Sweden",
+    "Albania",
+    "EDGE-Romania",
+    "EDGE-Bulgaria"
+   ]
+  }
+ },
+ {
+  "remarks": "Sweden 🇸🇪",
+  "log": {
+   "loglevel": "warning"
+  },
+  "api": {
+   "tag": "api"
+  },
+  "dns": {
+   "servers": [
+    "1.1.1.1"
+   ]
+  },
+  "inbounds": [
+   {
+    "tag": "socks-in",
+    "port": 10808,
+    "protocol": "socks"
+   }
+  ],
+  "outbounds": [
+   {
+    "tag": "proxy",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node6.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000006",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni3.example.com",
+      "publicKey": "fake-reality-key-3",
+      "shortId": "03",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "EDGE-STANDBY",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node5.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000005",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni3.example.com",
+      "publicKey": "fake-reality-key-3",
+      "shortId": "03",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "EDGE-Germany 🇩🇪",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node2.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000002",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni1.example.com",
+      "publicKey": "fake-reality-key-1",
+      "shortId": "01",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "Germany 🇩🇪",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node1.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000001",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni1.example.com",
+      "publicKey": "fake-reality-key-1",
+      "shortId": "01",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "EDGE-Netherlands 🇳🇱",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node3.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000003",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "xhttp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni2.example.com",
+      "publicKey": "fake-reality-key-2",
+      "shortId": "02",
+      "fingerprint": "chrome"
+     },
+     "xhttpSettings": {
+      "path": "/fake2",
+      "mode": "auto"
+     }
+    }
+   },
+   {
+    "tag": "Netherlands 🇳🇱",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node4.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000004",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "xhttp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni2.example.com",
+      "publicKey": "fake-reality-key-2",
+      "shortId": "02",
+      "fingerprint": "chrome"
+     },
+     "xhttpSettings": {
+      "path": "/fake2",
+      "mode": "auto"
+     }
+    }
+   },
+   {
+    "tag": "EDGE-Sweden 🇸🇪",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node5.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000005",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni3.example.com",
+      "publicKey": "fake-reality-key-3",
+      "shortId": "03",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "EDGE-Bulgaria 🇧🇬",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node7.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000007",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni4.example.com",
+      "publicKey": "fake-reality-key-4",
+      "shortId": "04",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "Bulgaria 🇧🇬",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node8.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000008",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni4.example.com",
+      "publicKey": "fake-reality-key-4",
+      "shortId": "04",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "EDGE-USA 🇺🇸",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node9.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000009",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni5.example.com",
+      "publicKey": "fake-reality-key-5",
+      "shortId": "05",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "USA 🇺🇸",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node10.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000010",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni5.example.com",
+      "publicKey": "fake-reality-key-5",
+      "shortId": "05",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "EDGE-Romania 🇷🇴",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node11.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000011",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni6.example.com",
+      "publicKey": "fake-reality-key-6",
+      "shortId": "06",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "Romania 🇷🇴",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node12.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000012",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni6.example.com",
+      "publicKey": "fake-reality-key-6",
+      "shortId": "06",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "DIRECT",
+    "protocol": "freedom"
+   },
+   {
+    "tag": "BLOCK",
+    "protocol": "blackhole"
+   },
+   {
+    "tag": "REJECT",
+    "protocol": "blackhole"
+   },
+   {
+    "tag": "LOOPBACK",
+    "protocol": "loopback"
+   },
+   {
+    "tag": "DNS",
+    "protocol": "dns"
+   }
+  ],
+  "routing": {
+   "domainStrategy": "IPIfNonMatch",
+   "balancers": [
+    {
+     "tag": "FIRST",
+     "selector": [
+      "proxy"
+     ],
+     "fallbackTag": "LOOPBACK"
+    },
+    {
+     "tag": "YOUTUBE",
+     "selector": [
+      "Albania"
+     ],
+     "strategy": {
+      "type": "leastPing"
+     },
+     "fallbackTag": "LOOPBACK"
+    },
+    {
+     "tag": "HEAVYTRAFFIC",
+     "selector": [
+      "EDGE-Romania",
+      "EDGE-Bulgaria"
+     ],
+     "strategy": {
+      "type": "leastPing"
+     },
+     "fallbackTag": "LOOPBACK"
+    },
+    {
+     "tag": "AUTO",
+     "selector": [
+      "Bulgaria",
+      "Netherlands",
+      "Germany",
+      "Sweden"
+     ],
+     "strategy": {
+      "type": "leastPing"
+     }
+    }
+   ],
+   "rules": [
+    {
+     "inboundTag": [
+      "socks-in"
+     ],
+     "balancerTag": "AUTO"
+    }
+   ]
+  },
+  "burstObservatory": {
+   "pingConfig": {
+    "timeout": "5s",
+    "interval": "1m",
+    "sampling": 4,
+    "httpMethod": "GET",
+    "destination": "https://www.gstatic.com/generate_204",
+    "connectivity": "https://www.gstatic.com/generate_204"
+   },
+   "subjectSelector": [
+    "proxy",
+    "Bulgaria",
+    "Netherlands",
+    "Germany",
+    "Sweden",
+    "Albania",
+    "EDGE-Romania",
+    "EDGE-Bulgaria"
+   ]
+  }
+ },
+ {
+  "remarks": "Bulgaria 🇧🇬",
+  "log": {
+   "loglevel": "warning"
+  },
+  "api": {
+   "tag": "api"
+  },
+  "dns": {
+   "servers": [
+    "1.1.1.1"
+   ]
+  },
+  "inbounds": [
+   {
+    "tag": "socks-in",
+    "port": 10808,
+    "protocol": "socks"
+   }
+  ],
+  "outbounds": [
+   {
+    "tag": "proxy",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node8.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000008",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni4.example.com",
+      "publicKey": "fake-reality-key-4",
+      "shortId": "04",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "EDGE-STANDBY",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node7.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000007",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni4.example.com",
+      "publicKey": "fake-reality-key-4",
+      "shortId": "04",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "EDGE-Germany 🇩🇪",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node2.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000002",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni1.example.com",
+      "publicKey": "fake-reality-key-1",
+      "shortId": "01",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "Germany 🇩🇪",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node1.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000001",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni1.example.com",
+      "publicKey": "fake-reality-key-1",
+      "shortId": "01",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "EDGE-Netherlands 🇳🇱",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node3.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000003",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "xhttp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni2.example.com",
+      "publicKey": "fake-reality-key-2",
+      "shortId": "02",
+      "fingerprint": "chrome"
+     },
+     "xhttpSettings": {
+      "path": "/fake2",
+      "mode": "auto"
+     }
+    }
+   },
+   {
+    "tag": "Netherlands 🇳🇱",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node4.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000004",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "xhttp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni2.example.com",
+      "publicKey": "fake-reality-key-2",
+      "shortId": "02",
+      "fingerprint": "chrome"
+     },
+     "xhttpSettings": {
+      "path": "/fake2",
+      "mode": "auto"
+     }
+    }
+   },
+   {
+    "tag": "EDGE-Sweden 🇸🇪",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node5.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000005",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni3.example.com",
+      "publicKey": "fake-reality-key-3",
+      "shortId": "03",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "Sweden 🇸🇪",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node6.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000006",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni3.example.com",
+      "publicKey": "fake-reality-key-3",
+      "shortId": "03",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "EDGE-Bulgaria 🇧🇬",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node7.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000007",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni4.example.com",
+      "publicKey": "fake-reality-key-4",
+      "shortId": "04",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "EDGE-USA 🇺🇸",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node9.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000009",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni5.example.com",
+      "publicKey": "fake-reality-key-5",
+      "shortId": "05",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "USA 🇺🇸",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node10.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000010",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni5.example.com",
+      "publicKey": "fake-reality-key-5",
+      "shortId": "05",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "EDGE-Romania 🇷🇴",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node11.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000011",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni6.example.com",
+      "publicKey": "fake-reality-key-6",
+      "shortId": "06",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "Romania 🇷🇴",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node12.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000012",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni6.example.com",
+      "publicKey": "fake-reality-key-6",
+      "shortId": "06",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "DIRECT",
+    "protocol": "freedom"
+   },
+   {
+    "tag": "BLOCK",
+    "protocol": "blackhole"
+   },
+   {
+    "tag": "REJECT",
+    "protocol": "blackhole"
+   },
+   {
+    "tag": "LOOPBACK",
+    "protocol": "loopback"
+   },
+   {
+    "tag": "DNS",
+    "protocol": "dns"
+   }
+  ],
+  "routing": {
+   "domainStrategy": "IPIfNonMatch",
+   "balancers": [
+    {
+     "tag": "FIRST",
+     "selector": [
+      "proxy"
+     ],
+     "fallbackTag": "LOOPBACK"
+    },
+    {
+     "tag": "YOUTUBE",
+     "selector": [
+      "Albania"
+     ],
+     "strategy": {
+      "type": "leastPing"
+     },
+     "fallbackTag": "LOOPBACK"
+    },
+    {
+     "tag": "HEAVYTRAFFIC",
+     "selector": [
+      "EDGE-Romania",
+      "EDGE-Bulgaria"
+     ],
+     "strategy": {
+      "type": "leastPing"
+     },
+     "fallbackTag": "LOOPBACK"
+    },
+    {
+     "tag": "AUTO",
+     "selector": [
+      "Bulgaria",
+      "Netherlands",
+      "Germany",
+      "Sweden"
+     ],
+     "strategy": {
+      "type": "leastPing"
+     }
+    }
+   ],
+   "rules": [
+    {
+     "inboundTag": [
+      "socks-in"
+     ],
+     "balancerTag": "AUTO"
+    }
+   ]
+  },
+  "burstObservatory": {
+   "pingConfig": {
+    "timeout": "5s",
+    "interval": "1m",
+    "sampling": 4,
+    "httpMethod": "GET",
+    "destination": "https://www.gstatic.com/generate_204",
+    "connectivity": "https://www.gstatic.com/generate_204"
+   },
+   "subjectSelector": [
+    "proxy",
+    "Bulgaria",
+    "Netherlands",
+    "Germany",
+    "Sweden",
+    "Albania",
+    "EDGE-Romania",
+    "EDGE-Bulgaria"
+   ]
+  }
+ },
+ {
+  "remarks": "USA 🇺🇸",
+  "log": {
+   "loglevel": "warning"
+  },
+  "api": {
+   "tag": "api"
+  },
+  "dns": {
+   "servers": [
+    "1.1.1.1"
+   ]
+  },
+  "inbounds": [
+   {
+    "tag": "socks-in",
+    "port": 10808,
+    "protocol": "socks"
+   }
+  ],
+  "outbounds": [
+   {
+    "tag": "proxy",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node10.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000010",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni5.example.com",
+      "publicKey": "fake-reality-key-5",
+      "shortId": "05",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "EDGE-STANDBY",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node9.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000009",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni5.example.com",
+      "publicKey": "fake-reality-key-5",
+      "shortId": "05",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "EDGE-Germany 🇩🇪",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node2.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000002",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni1.example.com",
+      "publicKey": "fake-reality-key-1",
+      "shortId": "01",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "Germany 🇩🇪",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node1.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000001",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni1.example.com",
+      "publicKey": "fake-reality-key-1",
+      "shortId": "01",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "EDGE-Netherlands 🇳🇱",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node3.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000003",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "xhttp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni2.example.com",
+      "publicKey": "fake-reality-key-2",
+      "shortId": "02",
+      "fingerprint": "chrome"
+     },
+     "xhttpSettings": {
+      "path": "/fake2",
+      "mode": "auto"
+     }
+    }
+   },
+   {
+    "tag": "Netherlands 🇳🇱",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node4.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000004",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "xhttp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni2.example.com",
+      "publicKey": "fake-reality-key-2",
+      "shortId": "02",
+      "fingerprint": "chrome"
+     },
+     "xhttpSettings": {
+      "path": "/fake2",
+      "mode": "auto"
+     }
+    }
+   },
+   {
+    "tag": "EDGE-Sweden 🇸🇪",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node5.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000005",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni3.example.com",
+      "publicKey": "fake-reality-key-3",
+      "shortId": "03",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "Sweden 🇸🇪",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node6.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000006",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni3.example.com",
+      "publicKey": "fake-reality-key-3",
+      "shortId": "03",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "EDGE-Bulgaria 🇧🇬",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node7.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000007",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni4.example.com",
+      "publicKey": "fake-reality-key-4",
+      "shortId": "04",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "Bulgaria 🇧🇬",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node8.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000008",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni4.example.com",
+      "publicKey": "fake-reality-key-4",
+      "shortId": "04",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "EDGE-USA 🇺🇸",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node9.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000009",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni5.example.com",
+      "publicKey": "fake-reality-key-5",
+      "shortId": "05",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "EDGE-Romania 🇷🇴",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node11.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000011",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni6.example.com",
+      "publicKey": "fake-reality-key-6",
+      "shortId": "06",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "Romania 🇷🇴",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node12.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000012",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni6.example.com",
+      "publicKey": "fake-reality-key-6",
+      "shortId": "06",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "DIRECT",
+    "protocol": "freedom"
+   },
+   {
+    "tag": "BLOCK",
+    "protocol": "blackhole"
+   },
+   {
+    "tag": "REJECT",
+    "protocol": "blackhole"
+   },
+   {
+    "tag": "LOOPBACK",
+    "protocol": "loopback"
+   },
+   {
+    "tag": "DNS",
+    "protocol": "dns"
+   }
+  ],
+  "routing": {
+   "domainStrategy": "IPIfNonMatch",
+   "balancers": [
+    {
+     "tag": "FIRST",
+     "selector": [
+      "proxy"
+     ],
+     "fallbackTag": "LOOPBACK"
+    },
+    {
+     "tag": "YOUTUBE",
+     "selector": [
+      "Albania"
+     ],
+     "strategy": {
+      "type": "leastPing"
+     },
+     "fallbackTag": "LOOPBACK"
+    },
+    {
+     "tag": "HEAVYTRAFFIC",
+     "selector": [
+      "EDGE-Romania",
+      "EDGE-Bulgaria"
+     ],
+     "strategy": {
+      "type": "leastPing"
+     },
+     "fallbackTag": "LOOPBACK"
+    },
+    {
+     "tag": "AUTO",
+     "selector": [
+      "Bulgaria",
+      "Netherlands",
+      "Germany",
+      "Sweden"
+     ],
+     "strategy": {
+      "type": "leastPing"
+     }
+    }
+   ],
+   "rules": [
+    {
+     "inboundTag": [
+      "socks-in"
+     ],
+     "balancerTag": "AUTO"
+    }
+   ]
+  },
+  "burstObservatory": {
+   "pingConfig": {
+    "timeout": "5s",
+    "interval": "1m",
+    "sampling": 4,
+    "httpMethod": "GET",
+    "destination": "https://www.gstatic.com/generate_204",
+    "connectivity": "https://www.gstatic.com/generate_204"
+   },
+   "subjectSelector": [
+    "proxy",
+    "Bulgaria",
+    "Netherlands",
+    "Germany",
+    "Sweden",
+    "Albania",
+    "EDGE-Romania",
+    "EDGE-Bulgaria"
+   ]
+  }
+ },
+ {
+  "remarks": "Romania 🇷🇴",
+  "log": {
+   "loglevel": "warning"
+  },
+  "api": {
+   "tag": "api"
+  },
+  "dns": {
+   "servers": [
+    "1.1.1.1"
+   ]
+  },
+  "inbounds": [
+   {
+    "tag": "socks-in",
+    "port": 10808,
+    "protocol": "socks"
+   }
+  ],
+  "outbounds": [
+   {
+    "tag": "proxy",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node12.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000012",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni6.example.com",
+      "publicKey": "fake-reality-key-6",
+      "shortId": "06",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "EDGE-STANDBY",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node11.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000011",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni6.example.com",
+      "publicKey": "fake-reality-key-6",
+      "shortId": "06",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "EDGE-Germany 🇩🇪",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node2.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000002",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni1.example.com",
+      "publicKey": "fake-reality-key-1",
+      "shortId": "01",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "Germany 🇩🇪",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node1.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000001",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni1.example.com",
+      "publicKey": "fake-reality-key-1",
+      "shortId": "01",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "EDGE-Netherlands 🇳🇱",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node3.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000003",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "xhttp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni2.example.com",
+      "publicKey": "fake-reality-key-2",
+      "shortId": "02",
+      "fingerprint": "chrome"
+     },
+     "xhttpSettings": {
+      "path": "/fake2",
+      "mode": "auto"
+     }
+    }
+   },
+   {
+    "tag": "Netherlands 🇳🇱",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node4.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000004",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "xhttp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni2.example.com",
+      "publicKey": "fake-reality-key-2",
+      "shortId": "02",
+      "fingerprint": "chrome"
+     },
+     "xhttpSettings": {
+      "path": "/fake2",
+      "mode": "auto"
+     }
+    }
+   },
+   {
+    "tag": "EDGE-Sweden 🇸🇪",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node5.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000005",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni3.example.com",
+      "publicKey": "fake-reality-key-3",
+      "shortId": "03",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "Sweden 🇸🇪",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node6.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000006",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni3.example.com",
+      "publicKey": "fake-reality-key-3",
+      "shortId": "03",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "EDGE-Bulgaria 🇧🇬",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node7.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000007",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni4.example.com",
+      "publicKey": "fake-reality-key-4",
+      "shortId": "04",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "Bulgaria 🇧🇬",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node8.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000008",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni4.example.com",
+      "publicKey": "fake-reality-key-4",
+      "shortId": "04",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "EDGE-USA 🇺🇸",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node9.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000009",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni5.example.com",
+      "publicKey": "fake-reality-key-5",
+      "shortId": "05",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "USA 🇺🇸",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node10.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000010",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni5.example.com",
+      "publicKey": "fake-reality-key-5",
+      "shortId": "05",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "EDGE-Romania 🇷🇴",
+    "protocol": "vless",
+    "settings": {
+     "vnext": [
+      {
+       "address": "node11.fixture.example.net",
+       "port": 443,
+       "users": [
+        {
+         "id": "aaaaaaaa-0000-4000-8000-000000000011",
+         "encryption": "none"
+        }
+       ]
+      }
+     ]
+    },
+    "streamSettings": {
+     "network": "tcp",
+     "security": "reality",
+     "realitySettings": {
+      "serverName": "sni6.example.com",
+      "publicKey": "fake-reality-key-6",
+      "shortId": "06",
+      "fingerprint": "chrome"
+     }
+    }
+   },
+   {
+    "tag": "DIRECT",
+    "protocol": "freedom"
+   },
+   {
+    "tag": "BLOCK",
+    "protocol": "blackhole"
+   },
+   {
+    "tag": "REJECT",
+    "protocol": "blackhole"
+   },
+   {
+    "tag": "LOOPBACK",
+    "protocol": "loopback"
+   },
+   {
+    "tag": "DNS",
+    "protocol": "dns"
+   }
+  ],
+  "routing": {
+   "domainStrategy": "IPIfNonMatch",
+   "balancers": [
+    {
+     "tag": "FIRST",
+     "selector": [
+      "proxy"
+     ],
+     "fallbackTag": "LOOPBACK"
+    },
+    {
+     "tag": "YOUTUBE",
+     "selector": [
+      "Albania"
+     ],
+     "strategy": {
+      "type": "leastPing"
+     },
+     "fallbackTag": "LOOPBACK"
+    },
+    {
+     "tag": "HEAVYTRAFFIC",
+     "selector": [
+      "EDGE-Romania",
+      "EDGE-Bulgaria"
+     ],
+     "strategy": {
+      "type": "leastPing"
+     },
+     "fallbackTag": "LOOPBACK"
+    },
+    {
+     "tag": "AUTO",
+     "selector": [
+      "Bulgaria",
+      "Netherlands",
+      "Germany",
+      "Sweden"
+     ],
+     "strategy": {
+      "type": "leastPing"
+     }
+    }
+   ],
+   "rules": [
+    {
+     "inboundTag": [
+      "socks-in"
+     ],
+     "balancerTag": "AUTO"
+    }
+   ]
+  },
+  "burstObservatory": {
+   "pingConfig": {
+    "timeout": "5s",
+    "interval": "1m",
+    "sampling": 4,
+    "httpMethod": "GET",
+    "destination": "https://www.gstatic.com/generate_204",
+    "connectivity": "https://www.gstatic.com/generate_204"
+   },
+   "subjectSelector": [
+    "proxy",
+    "Bulgaria",
+    "Netherlands",
+    "Germany",
+    "Sweden",
+    "Albania",
+    "EDGE-Romania",
+    "EDGE-Bulgaria"
+   ]
+  }
+ }
+]

@@ -1,0 +1,401 @@
+{
+  "revision": 10,
+  "generatedAt": "2026-11-04T12:00:00Z",
+  "slots": [
+    {
+      "createdAt": "2026-11-04T12:00:00Z",
+      "id": "assigned",
+      "version": 1,
+      "name": "Assigned",
+      "exit": {
+        "kind": "server",
+        "server": "c"
+      },
+      "status": "checking",
+      "downReason": null,
+      "server": null,
+      "appliedServer": null,
+      "leavingBy": null,
+      "pending": false,
+      "runtime": {
+        "phase": "closed",
+        "applied": {
+          "kind": "down",
+          "reason": "unselected"
+        },
+        "networkId": null,
+        "networkEstablished": false,
+        "errorCode": null
+      },
+      "unifi": {
+        "name": "Assigned",
+        "interface": "pxa2",
+        "known": true,
+        "client": "present",
+        "trouble": "nameTaken"
+      },
+      "backups": [
+        "c"
+      ]
+    },
+    {
+      "createdAt": "2026-11-04T12:00:00Z",
+      "id": "block",
+      "version": 1,
+      "name": "Block",
+      "exit": {
+        "kind": "block"
+      },
+      "status": "block",
+      "downReason": null,
+      "server": null,
+      "appliedServer": null,
+      "leavingBy": null,
+      "pending": false,
+      "runtime": {
+        "phase": "closed",
+        "applied": {
+          "kind": "down",
+          "reason": "unselected"
+        },
+        "networkId": "n-gone",
+        "networkEstablished": false,
+        "errorCode": null
+      },
+      "unifi": {
+        "name": "Block",
+        "interface": "pxa5",
+        "known": true,
+        "client": "deleted",
+        "trouble": null
+      },
+      "backups": []
+    },
+    {
+      "createdAt": "2026-11-04T12:00:00Z",
+      "id": "dead",
+      "version": 1,
+      "name": "Dead",
+      "exit": {
+        "kind": "server",
+        "server": "d"
+      },
+      "status": "failed",
+      "downReason": "noUsableServer",
+      "server": null,
+      "appliedServer": null,
+      "leavingBy": null,
+      "pending": false,
+      "runtime": {
+        "phase": "closed",
+        "applied": {
+          "kind": "down",
+          "reason": "unselected"
+        },
+        "networkId": null,
+        "networkEstablished": false,
+        "errorCode": null
+      },
+      "unifi": {
+        "name": "Dead",
+        "interface": "pxa6",
+        "known": true,
+        "client": "present",
+        "trouble": null
+      },
+      "backups": [
+        "d"
+      ]
+    },
+    {
+      "createdAt": "2026-11-04T12:00:00Z",
+      "id": "direct",
+      "version": 1,
+      "name": "Direct",
+      "exit": {
+        "kind": "direct"
+      },
+      "status": "direct",
+      "downReason": null,
+      "server": null,
+      "appliedServer": null,
+      "leavingBy": null,
+      "pending": false,
+      "runtime": {
+        "phase": "ready",
+        "applied": {
+          "kind": "direct"
+        },
+        "networkId": null,
+        "networkEstablished": true,
+        "errorCode": null
+      },
+      "unifi": {
+        "name": "Direct",
+        "interface": "pxa4",
+        "known": true,
+        "client": "disabled",
+        "trouble": null
+      },
+      "backups": []
+    },
+    {
+      "createdAt": "2026-11-04T12:00:00Z",
+      "id": "serving",
+      "version": 1,
+      "name": "Serving",
+      "exit": {
+        "kind": "group",
+        "group": "mine"
+      },
+      "status": "serving",
+      "downReason": null,
+      "server": "a",
+      "appliedServer": "a",
+      "leavingBy": null,
+      "pending": false,
+      "runtime": {
+        "phase": "ready",
+        "applied": {
+          "kind": "up",
+          "server": "a"
+        },
+        "networkId": null,
+        "networkEstablished": true,
+        "errorCode": null
+      },
+      "unifi": {
+        "name": "Serving",
+        "interface": "pxa1",
+        "known": true,
+        "client": "present",
+        "trouble": null
+      },
+      "backups": [
+        "b"
+      ]
+    },
+    {
+      "createdAt": "2026-11-04T12:00:00Z",
+      "id": "source",
+      "version": 1,
+      "name": "Source",
+      "exit": {
+        "kind": "source",
+        "source": "s"
+      },
+      "status": "checking",
+      "downReason": null,
+      "server": null,
+      "appliedServer": null,
+      "leavingBy": null,
+      "pending": false,
+      "runtime": {
+        "phase": "closed",
+        "applied": {
+          "kind": "down",
+          "reason": "unselected"
+        },
+        "networkId": null,
+        "networkEstablished": false,
+        "errorCode": null
+      },
+      "unifi": {
+        "name": "Source",
+        "interface": "pxa3",
+        "known": true,
+        "client": "present",
+        "trouble": null
+      },
+      "backups": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "s",
+      "revision": 1,
+      "name": "s",
+      "nameSet": true,
+      "firstChoice": "a",
+      "order": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "preferred": null,
+      "moves7d": 0,
+      "origin": {
+        "kind": "manual"
+      },
+      "feed": null,
+      "stored": 4,
+      "missing": 0,
+      "usedBy": [
+        "assigned",
+        "dead",
+        "serving",
+        "source"
+      ],
+      "removes": [
+        "all-s",
+        "mine",
+        "rule"
+      ],
+      "diagnostics": [],
+      "addedAt": null
+    }
+  ],
+  "groups": [
+    {
+      "id": "all-s",
+      "revision": 1,
+      "name": "All s",
+      "members": {
+        "sources": {
+          "not": false,
+          "values": [
+            "s"
+          ]
+        },
+        "countries": {
+          "not": false,
+          "values": []
+        },
+        "protocols": {
+          "not": false,
+          "values": []
+        },
+        "include": "",
+        "exclude": "",
+        "box": null
+      },
+      "ticked": [],
+      "resolved": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "usedBy": [],
+      "moves7d": 0,
+      "firstChoice": "a",
+      "order": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "preferred": null
+    },
+    {
+      "id": "mine",
+      "revision": 1,
+      "name": "Mine",
+      "members": {
+        "sources": {
+          "not": false,
+          "values": []
+        },
+        "countries": {
+          "not": false,
+          "values": []
+        },
+        "protocols": {
+          "not": false,
+          "values": []
+        },
+        "include": "",
+        "exclude": "",
+        "box": "ticked"
+      },
+      "ticked": [
+        "a",
+        "b"
+      ],
+      "resolved": [
+        "a",
+        "b"
+      ],
+      "usedBy": [
+        "serving"
+      ],
+      "moves7d": 0,
+      "firstChoice": "a",
+      "order": [
+        "a",
+        "b"
+      ],
+      "preferred": null
+    },
+    {
+      "id": "rule",
+      "revision": 1,
+      "name": "Rule",
+      "members": {
+        "sources": {
+          "not": false,
+          "values": [
+            "s"
+          ]
+        },
+        "countries": {
+          "not": false,
+          "values": [
+            "DE"
+          ]
+        },
+        "protocols": {
+          "not": false,
+          "values": []
+        },
+        "include": "a",
+        "exclude": "z",
+        "box": null
+      },
+      "ticked": [],
+      "resolved": [
+        "a"
+      ],
+      "usedBy": [],
+      "moves7d": 0,
+      "firstChoice": "a",
+      "order": [
+        "a"
+      ],
+      "preferred": null
+    }
+  ],
+  "wan": "up",
+  "vpnClients": {
+    "known": true,
+    "limit": 8,
+    "foreign": [
+      {
+        "id": "n-kept",
+        "name": "Kept",
+        "enabled": true,
+        "trouble": "routed"
+      },
+      {
+        "id": "n-theirs",
+        "name": "Theirs",
+        "enabled": true,
+        "trouble": null
+      }
+    ]
+  },
+  "core": {
+    "version": "26.10.31",
+    "running": "25.12.8"
+  },
+  "unifi": {
+    "acceptedAt": "2026-11-04T12:00:00Z"
+  },
+  "unifiTrouble": "noKey"
+}

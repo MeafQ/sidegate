@@ -1,0 +1,23 @@
+{
+  "version": "v0.1.0",
+  "releases": true,
+  "guide": "https://example.test/OWNER/sidegate/blob/v0.1.0/docs/operate.md",
+  "check": {
+    "at": "2026-11-04T12:00:00Z",
+    "failure": "unreachable"
+  },
+  "offered": {
+    "version": "v0.2.0",
+    "restartsCore": false,
+    "notes": "https://example.test/OWNER/sidegate/releases/tag/v0.2.0"
+  },
+  "running": null,
+  "last": {
+    "attempt": "0123456789abcdef",
+    "version": "v0.2.0",
+    "at": "2026-11-04T12:00:00Z",
+    "outcome": "failed",
+    "reason": "noStart",
+    "message": "the update didn't start"
+  }
+}

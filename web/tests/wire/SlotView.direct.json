@@ -1,0 +1,32 @@
+{
+  "createdAt": "2026-11-04T12:00:00Z",
+  "id": "direct",
+  "version": 1,
+  "name": "Direct",
+  "exit": {
+    "kind": "direct"
+  },
+  "status": "direct",
+  "downReason": null,
+  "server": null,
+  "appliedServer": null,
+  "leavingBy": null,
+  "pending": false,
+  "runtime": {
+    "phase": "ready",
+    "applied": {
+      "kind": "direct"
+    },
+    "networkId": null,
+    "networkEstablished": true,
+    "errorCode": null
+  },
+  "unifi": {
+    "name": "Direct",
+    "interface": "pxa4",
+    "known": true,
+    "client": "disabled",
+    "trouble": null
+  },
+  "backups": []
+}
